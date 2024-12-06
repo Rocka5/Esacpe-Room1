@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Escape Room</title>
+  </head>
+  <body>
+    <div class="modal2 center-content" id="intro">
+      <div class="modal-content2 center-content" id="intro2"></div>
+    </div>
+    <div class="row1">
+      <div class="box1 grey">
+        <div class="row4 center-content text">INVENTORY</div>
+        <div class="row4 center-content">
+          <img src="images/tape2.png" id="invtape2" class="fade" />
+        </div>
+        <div class="row4 center-content">
+          <img src="images/tape.png" id="invtape" class="fade" />
+        </div>
+        <div class="row4 center-content" id="vhstape" style="display: none">
+          <img
+            src="images/vhstape.png"
+            id="vhstapeImage"
+            onclick="showModal()"
+            class="click mouse"
+          />
+        </div>
+      </div>
+      <div class="box1"></div>
+      <div class="box1"></div>
+      <div class="box1 red">
+        <div class="row4 center-content text">OBJECTIVE</div>
+        <div class="row4 center-content text">find the pieces</div>
+        <div class="row4 center-content text">of the vhs tape</div>
+        <div class="row4 center-content text">to play the video</div>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="column1">
+        <div class="box2 center-bottom">
+          <img
+            src="images/tape2.png"
+            id="tape2"
+            onclick="collect2()"
+            class="img2 click mouse tapmarg"
+          />
+        </div>
+        <div class="box2"></div>
+      </div>
+      <div class="row3">
+        <div class="column2"></div>
+        <div class="column2 center-bottom">
+          <img src="images/tvstand.png" id="tv" />
+        </div>
+        <div class="column2 center-bottom">
+          <img
+            src="images/tape.png"
+            id="tape"
+            onclick="collect1()"
+            class="img1 click mouse"
+          />
+        </div>
+      </div>
+      <div class="column1">
+        <div class="box2"></div>
+        <div class="box2"></div>
+      </div>
+    </div>
+    <div class="modal center-content" id="myModal">
+      <div class="modal-content center-content">
+        <video id="tvVideo" style="display: none" controls>
+          <source src="videos/Untitled video.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="preload.js"></script>
+    <audio src="sounds/collect.mp3" id="pick"></audio>
+    <audio src="sounds/insert.mp3" id="insert"></audio>
+  </body>
+</html>
