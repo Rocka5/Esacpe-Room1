@@ -40,7 +40,7 @@ function showModal() {
   tvVideo.style.display = "block";
   tvVideo.play();
   setTimeout(function () {
-    window.location.href = "https://lyltrw.csb.app/";
+    window.location.href = "https://rocka5.github.io/Esacpe-Room2/";
   }, 6000);
 }
 
